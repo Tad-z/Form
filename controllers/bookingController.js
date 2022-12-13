@@ -45,3 +45,21 @@ exports.createBooking = async function (req, res) {
     });
   }
 };
+
+exports.deleteAllBookings = async (req, res) => {
+  try {
+    await Booking.deleteMany({}).then((data) => {
+      res.status(204).json({
+        status: "success",
+        // message: `${data.deletedCount} bookings were deleted successfully!`,
+      });
+    });
+  } catch (err) {
+    console.log(err.message);
+    res.status(400).json({
+      status: "fail",
+      message:
+        err.message || "Some error occurred while removing all bookings.", 
+    });
+  }
+}
