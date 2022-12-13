@@ -28,7 +28,7 @@ exports.createBooking = async function (req, res) {
       noOfLuggage: req.body.noOfLuggage,
     });
     const b = await booking.save();
-    res.status(201).json(q);
+    res.status(201).json(b);
   } catch (err) {
     console.log(err.message);
   }
