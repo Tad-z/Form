@@ -1,5 +1,4 @@
-const Booking = require('../models/formModel')
-
+const Booking = require("../models/formModel");
 
 exports.getAllBookings = async function (req, res) {
   try {
@@ -7,29 +6,42 @@ exports.getAllBookings = async function (req, res) {
     if (!bookings.length) return res.json([]);
     const count = bookings.length;
     res.status(200).json({
+      status: "success",
       message: "Bookings retrieved successfully",
       count,
-      bookings,
+      data: {
+        bookings,
+      },
     });
   } catch (err) {
-    console.log(err.message);
+    res.status(404).json({
+      status: "fail",
+      message: err,
+    });
   }
 };
 
 exports.createBooking = async function (req, res) {
   try {
-    const booking = new Booking({
+    const newBooking = await Booking.create({
       fullName: req.body.fullName,
-      Department: req.body.Department, 
+      Department: req.body.Department,
       Level: req.body.Level,
       phoneNumber: req.body.phoneNumber,
       departureDate: req.body.departureDate,
       dropOffPoint: req.body.dropOffPoint,
       noOfLuggage: req.body.noOfLuggage,
     });
-    const b = await booking.save();
-    res.status(201).json(b);
+    res.status(201).json({
+      status: "success",
+      data: {
+        newBooking,
+      },
+    });
   } catch (err) {
-    console.log(err.message);
+    res.status(400).json({
+      status: "fail",
+      message: err.message,
+    });
   }
 };
