@@ -4,6 +4,7 @@
 //   alert("You have been registered ✔");
 // });
 const form = document.getElementById("form");
+const tbody = document.querySelector("#tbody");
 
 function onSubmit(event) {
   event.preventDefault();
@@ -70,6 +71,7 @@ async function getData() {
   }
   const data = await response.json();
   const bookings = data.data.bookings;
+  console.log(bookings);
 
   bookings.forEach((booking) => {
     let {
