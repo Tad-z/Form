@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form__page {
+  height: 100vh;
+  background: radial-gradient(circle at top center, #c4dacf, #517664);
+}
+.heading {
+  font-family: "Rubik Gemstones", cursive;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  color: #0f3c43;
+}
+.form {
+  /* text-align: center; */
+  padding: 20px;
+  position: absolute;
+  background-color: #519e8a;
+  z-index: 15;
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  box-shadow: -1px 1px 28px 3px rgba(0, 0, 0, 0.75);
+  margin: auto;
+}
+label {
+  font-size: 16px;
+}
+input {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 10px;
+  border: 2px solid #7eb09b;
+  font-size: 16px;
+}
+.unchecked {
+  width: 70%;
+  background-color: #bcdcd4;
+  color: #1c1c1c;
+}
+.submit {
+  text-align: center;
+  padding: 20px;
+}
+.submit-btn {
+  width: 30%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid #372f34;
+  background-color: transparent;
+  font-size: 20px;
+  color: #bcdcd4;
+  transition: all 0.3s;
+}
+.submit-btn:hover {
+  background-color: #bcdcd4;
+  color: #002626;
+}
+.submit-btn:active {
+  background-color: #94c7ba;
+}
+#luggage {
+  width: 61%;
+}
+#dropoff {
+  width: 62.5%;
+}
+#date {
+  width: 65%;
+}
+#department {
+  width: 68.5%;
+}
