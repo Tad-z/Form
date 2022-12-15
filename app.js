@@ -1,3 +1,4 @@
+const path = require("path")
 const express = require("express");
 const morgan = require("morgan");
 
@@ -11,9 +12,7 @@ app.use(express.json());
 //Logs requests to the console
 app.use(morgan("dev"));
 
+app.use(express.static(path.join(__dirname, 'views')));
 app.use("/bookings", bookingRouter);
-
-//set up views engine to use ejs template package
-app.set("view engine", "ejs");
 
 module.exports = app;

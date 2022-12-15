@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Booking Application</title>
-  </head>
-  <body>
-    <section class="form__page">
-      <header class="heading">
-        <h1>Group 5's Travel Booking System</h1>
-      </header>
-  <div class="form">
-      <form action="" >
-      <label for="fullname">FullName:</label>
-      <input id="fullname" class="unchecked" type="text" placeholder="What is your first name" /></br>
 
-      <label for="department">Department:</label>
-      <input type="text" class="unchecked" id="department" placeholder="Your Department" /></br>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Booking Application</title>
+</head>
 
-      <label for="level1">Level:</label>
-      <input type="radio" value="100" name="level" />100
-      <input type="radio" value="200" name="level" />200
-      <input type="radio" value="300" name="level" />300
-      <input type="radio" value="400" name="level" />400
-      <input type="radio" value="500" name="level" />500</br>
+<body>
+  <section class="form__page">
+    <header class="heading">
+      <h1>Group 5's Travel Booking System</h1>
+    </header>
+    <div id="form">
+      <form action="">
+        <label for="fullname">FullName:</label>
+        <input id="fullname" class="unchecked" type="text" placeholder="What is your first name"
+          required="required" /></br>
 
-      <label for="date">Departure Date:</label>
-      <input type="date" class="unchecked" name="date" id="date"></br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input id="phoneNumber" class="unchecked" type="text" placeholder="What is your phone number"
+          required="required" /></br>
 
-      <label for="dropoff">Drop off Location:</label>
-      <input type="text" class="unchecked" id="dropoff" placeholder="Where do you drop" /></br>
+        <label for="department">Department:</label>
+        <input type="text" class="unchecked" id="department" placeholder="Your Department" required="required" /></br>
 
-      <label for="luggage">Number of luggages</label>
-      <input type="number" class="unchecked" id="luggage" name="luggage" min="0" max="5" ></br>
-      <div class="submit">
-     <button type="submit"  class="submit-btn">Submit</button>
+        <label for="levels">Level:</label>
+        <div id="levels">
+          <input type="radio" id="l1" value="100" name="level" />100
+          <input type="radio" id="l2" value="200" name="level" />200
+          <input type="radio" id="l3" value="300" name="level" />300
+          <input type="radio" id="l4" value="400" name="level" />400
+          <input type="radio" id="l5" value="500" name="level" />500</br>
+        </div>
+
+        <label for="date">Departure Date:</label>
+        <input type="date" class="unchecked" name="date" id="date" required="required" /></br>
+
+        <label for="dropoff">Drop off Location:</label>
+        <input type="text" class="unchecked" id="dropoff" placeholder="Where do you drop" required="required" /></br>
+
+        <label for="luggage">Number of luggages</label>
+        <input type="number" class="unchecked" id="luggage" name="luggage" min="0" max="5" required="required" /></br>
+        <div class="submit">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </form>
     </div>
-    </form>
-  </div>
   </section>
-  </body>
+</body>
+
 </html>
