@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "Zeal Meruwoma",
+  "author": "Zeal Meruwoma && Toriola Samuel && Akintade David",
   "license": "ISC",
   "dependencies": {
     "consolidate": "^0.16.0",
