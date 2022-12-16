@@ -17,7 +17,7 @@ const formSchema = new Schema(
       required: [true, "Level is required"],
     },
     phoneNumber: {
-      type: Number,
+      type: String,
       required: [true, "Phone Number is required"],
     },
     departureDate: {
