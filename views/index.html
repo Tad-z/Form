@@ -22,20 +22,22 @@
           required="required" /></br>
 
         <label for="phoneNumber">Phone Number:</label>
-        <input id="phoneNumber" class="unchecked" type="tel" placeholder="What is your phone number"
+        <input id="phoneNumber" minlength="11" maxlength="11" size="11" class="unchecked" type="tel" placeholder="What is your phone number"
           required="required" /></br>
 
         <label for="department">Department:</label>
         <input type="text" class="unchecked" id="department" placeholder="Your Department" required="required" /></br>
+        
+          <label for="levels">Level:</label>
+          <div id="levels">
+            <input type="radio" id="l1" value="100" name="level" />100
+            <input type="radio" id="l2" value="200" name="level" />200
+            <input type="radio" id="l3" value="300" name="level" />300
+            <input type="radio" id="l4" value="400" name="level" />400
+            <input type="radio" id="l5" value="500" name="level" />500</br>
+          </div>
+        
 
-        <label for="levels" >Level:</label>
-        <div id="levels">
-          <input type="radio" id="l1" value="100" name="level" />100
-          <input type="radio" id="l2" value="200" name="level" />200
-          <input type="radio" id="l3" value="300" name="level" />300
-          <input type="radio" id="l4" value="400" name="level" />400
-          <input type="radio" id="l5" value="500" name="level" />500</br>
-        </div>
 
         <label for="date">Departure Date:</label>
         <input type="date" class="unchecked" name="date" id="date" required="required" /></br>
