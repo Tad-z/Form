@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="admin.js"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <h1 style="text-align: center;">List of all Bookings for the trip</h1>
-    <table class="table">
+  <body>
+    <section class="form__page">
+      <header class="table__heading">
+        <h1>List of all Bookings for the trip</h1>
+      </header>
+      <table class="table">
         <thead>
-            <tr>
-                <th>Full Name</th>
-                <th>Department</th>
-                <th>Level</th>
-                <th>Phone Number</th>
-                <th>Departure Date</th>
-                <th>Drop off Location</th>
-                <th>Number of Luggages</th>
-            </tr>
+          <tr class="table__head">
+            <th>Full Name</th>
+            <th>Department</th>
+            <th>Level</th>
+            <th>Phone Number</th>
+            <th>Departure Date</th>
+            <th>Drop off Location</th>
+            <th>Number of Luggages</th>
+          </tr>
         </thead>
-        <tbody id="tbody">
-        </tbody>
-    </table>
-</body>
-
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </body>
 </html>
